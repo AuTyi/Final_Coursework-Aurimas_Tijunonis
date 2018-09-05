@@ -1,23 +1,10 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-		<title>Pizzeria Vilnius Best of</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
-		<link rel="stylesheet" type="text/css" href="css/style.css?<?php echo time(); ?>"/>
-		<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+<?php require_once('includes/head_section.php') ?>
+
+<title>Pizzeria Vilnius Best of</title>
 	</head>
 <body>
-	<!-- Navigation fixed on top -->
-	<nav>
-	<div class="bar b-black">
-		<a href="#" class="n-button">HOME</a>
-		<a href="#menu" class="n-button">MENU</a>
-		<a href="#gmap_canvas" class="n-button">CONTACT</a>
-		<a href="#about" class="n-button">ABOUT</a>
-	</div>
-	</nav>
+	<!-- navbar -->
+  <?php include('includes/navbar.php') ?>
 
 <!-- Header -->
 <header id="home">
@@ -30,7 +17,7 @@
   </div>
 </header>
 
-<!-- Menu block -->
+<!-- The Menu block -->
 <div class="s-menu" id="menu">
   <div class="m-content">
   
@@ -109,26 +96,43 @@
 
   </div>
 </div>
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" red-col", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " red-col ";
+}
+document.getElementById("myLink").click();
+</script>
 <!-- about-->
 <section class="s-menu" id="about">
   <div class="m-content">
     <h1 class="m-center">About</h1>
-    <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p><strong>The Chef?</strong> Mr. Italiano himself<img src="/w3images/chef.jpg" style="width:150px" class="a-chef" alt="Chef-Italiano"></p>
+    <p class="background-dark" >The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p><strong>The Chef?</strong> Mr. Italiano himself<img src="../../_WebProjectPizza/img/chef.jpg" class="a-chef" alt="Chef-Italiano"></p>
     <p>We are proud of our interiors.</p>
     
     <h1><b>Opening Hours</b></h1>
     
-    <div class="a-row">
+    <div class="a-row background-dark">
       <div class="a-col">
         <p>Mon & Tue CLOSED</p>
         <p>Wednesday 10.00 - 24.00</p>
         <p>Thursday 10:00 - 24:00</p>
       </div>
       <div class="a-col">
-        <p>Friday 10:00 - 12:00</p>
-        <p>Saturday 10:00 - 23:00</p>
-        <p>Sunday Closed</p>
+        <p>Friday 10:00 - 24:00</p>
+        <p>Saturday 10:00 - 24:00</p>
+        <p>Sunday 10:00 - 24:00</p>
       </div>
     </div>
     
@@ -152,34 +156,12 @@
     <form action="/action_page.php" target="_blank">
       <input type="text" placeholder="Name" required name="Name">
       <input type="number" placeholder="How many people" required name="People">
-      <input type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00">
+      <input type="datetime-local" placeholder="Date and time" required name="date" value="2018-10-15T20:00">
       <input type="text" placeholder="Message" required name="Message">
       <button type="submit">SEND MESSAGE</button>
     </form>
   </div>
 </div>
 
- <footer>
-	 Copyright © aurimelis-eta-gamil.com 2018. All rights reserved.  <a href="#home">Go UP</a>
- </footer>
-
- <script>
-// Tabbed Menu
-function openMenu(evt, menuName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("menu");
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-     tablinks[i].className = tablinks[i].className.replace(" red-col", "");
-  }
-  document.getElementById(menuName).style.display = "block";
-  evt.currentTarget.firstElementChild.className += " red-col ";
-}
-document.getElementById("myLink").click();
-</script>
-
-</body>
-</html>
+<!-- footer -->
+<?php include('includes/footer.php') ?>

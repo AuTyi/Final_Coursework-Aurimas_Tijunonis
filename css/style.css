@@ -35,7 +35,21 @@ header {
     background-image: url(../../_WebProjectPizza/img/pizza.jpg);
 	min-height: 90%;
 	filter: grayscale(50%);
-    position: relative;
+    
+}
+#about{
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../../_WebProjectPizza/img/restourant.jpg);
+
+	filter: grayscale(50%);
+}
+.background-dark{
+	background-color: rgba(0, 0, 0, 0.35);
+	color: white;
+	padding: 15px;
+	text-align: justify;
+	
 }
 .h-mobile {
 	text-align: center!important;
@@ -155,10 +169,12 @@ hr {
 	border-radius: 50%;
 	vertical-align: middle;
 }
+
 .a-row{
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 20px;
+	width: 100%;
 	
 }
 .a-col{
