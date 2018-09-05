@@ -32,7 +32,7 @@ nav {
 header {
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../../a/img/pizza.jpg);
+    background-image: url(../../_WebProjectPizza/img/pizza.jpg);
 	min-height: 90%;
 	filter: grayscale(50%);
     position: relative;
