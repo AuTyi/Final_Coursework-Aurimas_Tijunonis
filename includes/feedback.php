@@ -64,7 +64,7 @@ if(strlen($success) == 0) {
 
 } else {
    
-    print "<a>Thanks " . $name . ". Your message has been sent!</a>";
+    print "<a href>Thanks " . $name . ". Your message has been sent!</a>";
 }
 
 //if(!empty($_SESSION)){

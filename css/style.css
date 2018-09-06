@@ -29,6 +29,10 @@ nav {
 	cursor: pointer;
 	white-space: nowrap;
 }
+.bar-distrib{
+	display: flex;
+	justify-content: space-between;
+}
 header {
     background-repeat: no-repeat;
     background-size: cover;
@@ -228,6 +232,7 @@ button {
 	border-radius: 2px; 
 	width: 100%;
 	font: inherit;
+	margin-bottom: 20px;
 }
 button:hover{
 	background-color: #e04923!important;
@@ -246,6 +251,42 @@ footer a {
 #website {
 	display: none;
 }
+/*admin*/
+.admin {
+	min-height: 90%;
+	background-color: #757575;
+	font-family: cursive;
+	color: #fff!important;
+    padding-top: 64px!important;
+    padding-bottom: 64px!important;
+    padding: 0.01em 16px;
+}
+
+.user, input[type="checkbox"] {
+	float: left;
+	margin-right: 5px;
+	margin-top: 9px;
+    width: unset;
+  }
+  form span{
+	  color: darkorange;
+  }
+  .welcome{
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	display: initial;
+  }
+  .welcome p{
+	  display: inline-block;
+	  margin: 0;
+	  padding: 16px;
+	  font-size: 120%;
+	}
+	.welcome span {
+		text-transform: uppercase;
+	}
+
 /*Large devices (laptops/desktops/tablets, 686px and up)*/ 
 @media screen and (min-width: 686px) {
 
