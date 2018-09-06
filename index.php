@@ -114,16 +114,16 @@ function openMenu(evt, menuName) {
 document.getElementById("myLink").click();
 </script>
 <!-- about-->
-<section class="s-menu" id="about">
+<section class="background-dark" id="about">
   <div class="m-content">
     <h1 class="m-center">About</h1>
-    <p class="background-dark" >The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     <p><strong>The Chef?</strong> Mr. Italiano himself<img src="../../_WebProjectPizza/img/chef.jpg" class="a-chef" alt="Chef-Italiano"></p>
     <p>We are proud of our interiors.</p>
     
     <h1><b>Opening Hours</b></h1>
     
-    <div class="a-row background-dark">
+    <div class="a-row">
       <div class="a-col">
         <p>Mon & Tue CLOSED</p>
         <p>Wednesday 10.00 - 24.00</p>
@@ -152,7 +152,7 @@ document.getElementById("myLink").click();
     <h1 class="m-center">Contact</h1>
     <p>Find us at Gedimino bokštas at or call us at +37068505907</p>
     <p><span class="s-open">HEY!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
-    <p class="f-xxl"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <p class="f-xl"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
     <form action="/action_page.php" target="_blank">
       <input type="text" placeholder="Name" required name="Name">
       <input type="number" placeholder="How many people" required name="People">
