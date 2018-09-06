@@ -208,7 +208,7 @@ hr {
 	background-color:#616161!important;
 }
 
-input {
+input, textarea {
 	width: 100%;
 	font: inherit;
 	margin: 20px 0;
@@ -242,6 +242,9 @@ footer {
 }
 footer a {
 	color: white;
+}
+#website {
+	display: none;
 }
 /*Large devices (laptops/desktops/tablets, 686px and up)*/ 
 @media screen and (min-width: 686px) {

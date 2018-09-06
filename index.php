@@ -153,13 +153,8 @@ document.getElementById("myLink").click();
     <p>Find us at Gedimino bokštas at or call us at +37068505907</p>
     <p><span class="s-open">HEY!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
     <p class="f-xl"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
-    <form action="/action_page.php" target="_blank">
-      <input type="text" placeholder="Name" required name="Name">
-      <input type="number" placeholder="How many people" required name="People">
-      <input type="datetime-local" placeholder="Date and time" required name="date" value="2018-10-15T20:00">
-      <input type="text" placeholder="Message" required name="Message">
-      <button type="submit">SEND MESSAGE</button>
-    </form>
+    <!--feedback form-->
+    <?php include('includes/feedback.php');//connect to database ?>
   </div>
 </div>
 
