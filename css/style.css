@@ -6,6 +6,7 @@ body, html {
 	line-height: 1.85;
 	font-size: 15px;
 }
+a { color: lightgreen;}
 
 body,h1,h2,h3,h4,h5,h6 {font-family: 'Rock Salt', cursive;}
 /* header*/
@@ -29,28 +30,39 @@ nav {
 	cursor: pointer;
 	white-space: nowrap;
 }
-header {
+.bar-distrib{
+	display: flex;
+	justify-content: space-between;
+}
+.bar {
+	width: 100%;
+	overflow: hidden;
+	opacity: 0.60;
+}
+#home {
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../../_WebProjectPizza/img/pizza.jpg);
-	min-height: 90%;
-	filter: grayscale(50%);
-    
+    min-height: 90%;
+    filter: grayscale(50%);
+    position: relative;
 }
 #about{
+	color: #fff!important;
+    padding-top: 64px!important;
+    padding-bottom: 64px!important;
+    padding: 0.01em 16px;
 	background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../../_WebProjectPizza/img/restourant.jpg);
-
+	margin: 0 auto;
 	filter: grayscale(50%);
 }
 .background-dark{
-	background-color: rgba(0, 0, 0, 0.35);
-	color: white;
-	padding: 15px;
-	text-align: justify;
-	
+	background-color: #616161;
+    background-blend-mode: soft-light;
 }
+
 .h-mobile {
 	text-align: center!important;
 	position: absolute;
@@ -60,6 +72,9 @@ header {
 }
 .f-xxl {
 	font-size: 28px!important;
+}
+.f-xl {
+	font-size: 24px!important;
 }
 .mobile{
 	font-size: 55px;
@@ -203,7 +218,7 @@ hr {
 	background-color:#616161!important;
 }
 
-input {
+input, textarea {
 	width: 100%;
 	font: inherit;
 	margin: 20px 0;
@@ -223,6 +238,7 @@ button {
 	border-radius: 2px; 
 	width: 100%;
 	font: inherit;
+	margin-bottom: 20px;
 }
 button:hover{
 	background-color: #e04923!important;
@@ -238,19 +254,75 @@ footer {
 footer a {
 	color: white;
 }
+#website {
+	display: none;
+}
+/*admin*/
+.admin {
+	min-height: 90%;
+	background-color: #757575;
+	font-family: cursive;
+	color: #fff!important;
+    padding-top: 64px!important;
+    padding-bottom: 64px!important;
+    padding: 0.01em 16px;
+}
+
+.user, input[type="checkbox"] {
+	float: left;
+	margin-right: 5px;
+	margin-top: 9px;
+    width: unset;
+  }
+form span{
+	  color: darkorange;
+  }
+.navigation p{
+	  display: inline-block;
+	  margin: 0;
+	  padding: 16px;
+	  }
+.navigation p a{
+	color: inherit;
+	text-decoration: none;
+}
+.navigation span {
+		text-transform: uppercase;
+	}
+.notification{
+	background-color: darkgrey;
+    padding: 0.5em;
+    border-radius: 2px;
+}
+.pagination{
+	font-size: 150%;
+    color: white;
+	padding-right: 10px;
+	text-decoration: none;
+}
+
 /*Large devices (laptops/desktops/tablets, 686px and up)*/ 
 @media screen and (min-width: 686px) {
 
-	nav {
+	.navigation {
 		position: fixed;
 		width: 100%;
 		z-index: 1;
 		display: initial;
+		opacity: 0.60;
+	}
+	.bar-first a:first-child, .bar-first p:first-child{
+		padding-left: 0;
+	}
+	.bar-second a:last-child, .bar-second p:last-child{
+		padding-right: 0;
 	}
 	.bar {
 		width: 100%;
 		overflow: hidden;
 		opacity: 0.60;
+		max-width: 980px;
+    	margin: 0 auto;
 	}
 	
 	.mobile{
