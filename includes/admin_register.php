@@ -83,7 +83,7 @@ if(nameValid($name) && emailValid($email) && passwordValid($password) && passwor
 						        
             <button type="submit" class="submit" value="Register" >REGISTER</button>
         <p>
-  		Already a member? <a href="includes/login.php">Sign in</a>
+  		Already a member? <a href="login.php">Sign in</a>
   	    </p>
     </form>
    

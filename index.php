@@ -8,13 +8,14 @@
 
 <!-- Header -->
 <header id="home">
-  <div class="open">
-    <span class="s-open font-xl">Open from 10 to 24</span>
-  </div>
-  <div class="h-mobile">
-    <span class="mobile" ><b>thin<br>CRUST PIZZA</b></span>
-    <p><a href="#menu" class="n-button b-black f-xxl">Let me see the menu</a></p>
-  </div>
+      <div class="h-mobile">
+      <span class="mobile" ><b>thin<br>CRUST PIZZA</b></span>
+      <p><a href="#menu" class="n-button b-black f-xxl">Let me see the menu</a></p>
+      </div>
+
+       <div class="open">
+      <span class="s-open font-xl">Open from 10 to 24</span>
+      </div>   
 </header>
 
 <!-- The Menu block -->
@@ -35,62 +36,62 @@
     </div>
 
     <div id="Pizza" class="menu m-list">
-      <h1><b>Margherita</b> <span class="m-price s-open">$12.50</span></h1>
+      <h1><b>Margherita</b> <span class="m-price s-open">3.50 €</span></h1>
       <p class="m-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
       <hr>
    
-      <h1><b>Formaggio</b> <span class="m-price s-open">$15.50</span></h1>
+      <h1><b>Formaggio</b> <span class="m-price s-open">4.50 €</span></h1>
       <p class="m-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
       <hr>
       
-      <h1><b>Chicken</b> <span class="m-price s-open">$17.00</span></h1>
+      <h1><b>Chicken</b> <span class="m-price s-open">5.00 €</span></h1>
       <p class="m-text-grey">Fresh tomatoes, mozzarella, chicken, onions</p>
       <hr>
 
-      <h1><b>Pineapple'o'clock</b> <span class="m-price s-open">$16.50</span></h1>
+      <h1><b>Pineapple'o'clock</b> <span class="m-price s-open">5.50 €</span></h1>
       <p class="m-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
       <hr>
 
-      <h1><b>Meat Town</b> <span class="m-new s-open">Hot!</span><span class="m-price s-open">$20.00</span></h1>
+      <h1><b>Meat Town</b> <span class="m-new s-open">Hot!</span><span class="m-price s-open">6.00 €</span></h1>
       <p class="m-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
       <hr>
 
-      <h1><b>Parma</b> <span class="m-new s-open">New!</span><span class="m-price s-open">$21.50</span></h1>
+      <h1><b>Parma</b> <span class="m-new s-open">New!</span><span class="m-price s-open">6.50 €</span></h1>
       <p class="m-text-grey">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
     </div>
 
     <div id="Pasta" class="menu m-list">
-      <h1><b>Lasagna</b> <span class="m-new s-open">Popular!</span> <span class="m-price s-open">$13.50</span></h1>
+      <h1><b>Lasagna</b> <span class="m-new s-open">Popular!</span> <span class="m-price s-open">3.50 €</span></h1>
       <p class="m-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
       <hr>
    
-      <h1><b>Ravioli</b> <span class="m-price s-open">$14.50</span></h1>
+      <h1><b>Ravioli</b> <span class="m-price s-open">4.50 €</span></h1>
       <p class="m-text-grey">Ravioli filled with cheese</p>
       <hr>
       
-      <h1><b>Spaghetti Classica</b> <span class="m-price s-open">$11.00</span></h1>
+      <h1><b>Spaghetti Classica</b> <span class="m-price s-open">5.00 €</span></h1>
       <p class="m-text-grey">Fresh tomatoes, onions, ground beef</p>
       <hr>
 
-      <h1><b>Seafood pasta</b> <span class="m-price s-open">$25.50</span></h1>
+      <h1><b>Seafood pasta</b> <span class="m-price s-open">5.50 €</span></h1>
       <p class="m-text-grey">Salmon, shrimp, lobster, garlic</p>
     </div>
 
 
     <div id="Starter" class="menu m-list">
-      <h1><b>Today's Soup</b> <span class="m-new s-open">New!</span><span class="m-price s-open">$5.50</span></h1>
+      <h1><b>Today's Soup</b> <span class="m-new s-open">New!</span><span class="m-price s-open">1.50 €</span></h1>
       <p class="m-text-grey">Ask the waiter</p>
       <hr>
    
-      <h1><b>Bruschetta</b> <span class="m-price s-open">$8.50</span></h1>
+      <h1><b>Bruschetta</b> <span class="m-price s-open">2.50 €</span></h1>
       <p class="m-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
       <hr>
       
-      <h1><b>Garlic bread</b> <span class="m-price s-open">$9.50</span></h1>
+      <h1><b>Garlic bread</b> <span class="m-price s-open">4.50 €</span></h1>
       <p class="m-text-grey">Grilled ciabatta, garlic butter, onions</p>
       <hr>
       
-      <h1><b>Tomozzarella</b> <span class="m-price s-open">$10.50</span></h1>
+      <h1><b>Tomozzarella</b> <span class="m-price s-open">5.50€</span></h1>
       <p class="m-text-grey">Tomatoes and mozzarella</p>
     </div><br>
 
@@ -154,7 +155,9 @@ document.getElementById("myLink").click();
     <p><span class="s-open">HEY!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
     <p class="f-xl"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
     <!--feedback form-->
-    <?php include('includes/feedback.php');//connect to database ?>
+    <?php include('includes/feedback.php');?>
+    
+  
   </div>
 </div>
 

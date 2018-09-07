@@ -10,5 +10,5 @@ $user_id = $row['id'];
 $result = $conn->query("DELETE FROM `tokens` WHERE `user_id`='$user_id'");//delete rememberme 
 unset($_SESSION['username']);
 session_destroy();
-header("Location: login.php"); //back to login page
+header("Location: ../../_WebProjectPizza/index.php"); //back to index page
 ?>

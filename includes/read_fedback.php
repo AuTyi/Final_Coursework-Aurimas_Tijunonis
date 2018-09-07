@@ -41,7 +41,7 @@ $entries = $conn->query("SELECT * FROM feedback ORDER BY date desc" . $selection
 				$max_page = ceil($all_entries->num_rows/$entries_per_page);
 				for($n=1; $n <= $max_page; $n++){
 					$active = ($page == $n) ? "classname='active'" : "";
-					echo '<a href="admin.php?page=' . $n . '" ' . $active . '>' . $n . '</a>';
+					echo '<a class="pagination" href="admin.php?page=' . $n . '" ' . $active . '>' . $n . '</a>';
 				}
 			}else {
 				echo '<p>Error: No entries</p>';

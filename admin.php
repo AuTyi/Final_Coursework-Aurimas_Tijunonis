@@ -26,13 +26,17 @@
             }
             
             ?>
-
-                <!-- logged in user information -->
+<!-- logged in user menu and information -->
                 <?php  if (isset($_SESSION['username'])) : ?>
-                    <div class="welcome">
-                        <div class="bar b-black" >
-                            <p class="n-button" >Welcome <span><?php echo $_SESSION['us']; ?></span></p>
-                            <p class="n-button" > <a href="includes/logout.php?logout='1'" style="color: red;">Logout</a> </p>
+                    <div class="navigation b-black">
+                        <div class="bar b-black bar-distrib">
+                            <div class="bar-first">
+                                <p>Welcome <span><?php echo $_SESSION['us']; ?></span></p>
+                                <p> <a href="includes/logout.php?logout='1'">Logout</a> </p>
+                            </div>
+                            <div class="bar-second">
+                                <p><a href="index.php#">HOME</a></p>
+                            </div>
                         </div>
                     </div> 
 
@@ -40,13 +44,12 @@
     <div class = "m-content">    
         <!-- notification message -->
         <?php if (isset($_SESSION['success'])) : ?>
-                <div class="error success" >
-                    <h3>
+                <div class="notification" >
                     <?php 
                         echo $_SESSION['success']; 
                         unset($_SESSION['success']);
                     ?>
-                    </h3>
+                    
                 </div>
                 <?php endif ?>
         <h1 class="m-center">Users reservation and submited messages</h1>                   

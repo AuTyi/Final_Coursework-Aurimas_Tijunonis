@@ -5,7 +5,7 @@ $name = isset($_POST['name']) ? $_POST['name'] : '';
 $people = isset($_POST['people']) ? $_POST['people'] : '';
 $feedback = isset($_POST['feedback']) ? $_POST['feedback'] : '';
 $date = isset($_POST['date']) ? $_POST['date'] : ''; 
-$success = isset($_GET['success']) ? $_GET['success'] : '';
+//$success = isset($_GET['success']) ? $_GET['success'] : '';
 $error = array("name" => "","people" => "", "feedback" => "","database" => "", "check" => "");
 
 
@@ -22,7 +22,9 @@ if($_POST){
         //Write to the table 
         $saved = $conn->query("INSERT INTO `feedback`(`name`, `people`, `datetime`, `mesage`) VALUES ('$name','$people', '$date', '$feedback')");
             if($saved){
-                    header('Location:' . $_SERVER['PHP_SELF'] . '?success=OK'); 
+                $_SESSION['success_msg'] = "You are now logged in";
+                header('Location:' . $_SERVER['PHP_SELF']); 
+                 
             }else{ 
 				$error['database'] = "Error when saving"; //if not save to DB
 			}
@@ -44,7 +46,7 @@ if($_POST){
     }
 }
 
-if(strlen($success) == 0) {
+
 ?>
 <div id="response"><!-- you message will appear here --></div>
 <form method="POST" id="form" action="<?php echo $_SERVER['PHP_SELF'] ?>">
@@ -59,20 +61,14 @@ if(strlen($success) == 0) {
         <span><?php echo $error['database']; ?></span>
         <button type="submit" class="submit" >SEND MESSAGE</button>
 </form>
-
-<?php 
-
-} else {
-   
-    print "<a href>Thanks " . $name . ". Your message has been sent!</a>";
-}
-
-//if(!empty($_SESSION)){
-  //  echo $_SESSION["message"];
-   // session_unset();
-    unset($success);
-//}
-//$_SESSION['name'] = $name;
-
-  //  $_SESSION["message"] = "Thanks " . $_SESSION['name'] . ". Your message has been sent!";
-?>	  
+<!-- notification message -->
+<?php if (isset($_SESSION['success_msg'])) : ?>
+      <div class="error success" >
+      	<h3>
+          <?php 
+          	echo $_SESSION['success_msg']; 
+          	unset($_SESSION['success_msg']);
+          ?>
+      	</h3>
+      </div>
+  	<?php endif ?>
