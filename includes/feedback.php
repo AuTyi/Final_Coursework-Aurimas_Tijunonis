@@ -22,7 +22,7 @@ if($_POST){
         //Write to the table 
         $saved = $conn->query("INSERT INTO `feedback`(`name`, `people`, `datetime`, `mesage`) VALUES ('$name','$people', '$date', '$feedback')");
             if($saved){
-                $_SESSION['success_msg'] = "You are now logged in";
+                $_SESSION['success_msg'] = "Your message has been successfully sent";
                 header('Location:' . $_SERVER['PHP_SELF']); 
                  
             }else{ 
@@ -46,7 +46,6 @@ if($_POST){
     }
 }
 
-
 ?>
 <div id="response"><!-- you message will appear here --></div>
 <form method="POST" id="form" action="<?php echo $_SERVER['PHP_SELF'] ?>">
@@ -67,7 +66,7 @@ if($_POST){
       	<h3>
           <?php 
           	echo $_SESSION['success_msg']; 
-          	unset($_SESSION['success_msg']);
+            unset($_SESSION['success_msg']);
           ?>
       	</h3>
       </div>

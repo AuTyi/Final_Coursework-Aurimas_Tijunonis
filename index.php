@@ -156,8 +156,7 @@ document.getElementById("myLink").click();
     <p class="f-xl"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
     <!--feedback form-->
     <?php include('includes/feedback.php');?>
-    
-  
+      
   </div>
 </div>
 

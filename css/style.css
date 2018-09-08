@@ -11,7 +11,26 @@ a { color: lightgreen;}
 body,h1,h2,h3,h4,h5,h6 {font-family: 'Rock Salt', cursive;}
 /* header*/
 nav {
-	display: none;
+	width: 100%;
+	z-index: 1;
+	opacity: 0.60;
+}
+.bar {
+	width: 100%;
+	overflow: hidden;
+	
+	max-width: 980px;
+	margin: 0 auto;
+	width: 100%;.bar
+	overflow: hidden;
+}
+.bar-distrib{
+	display: unset;
+	text-align: center;
+}
+.bar-first{
+	display: flex;
+    justify-content: space-between;
 }
 .b-black {
 	color: #fff!important;
@@ -30,14 +49,9 @@ nav {
 	cursor: pointer;
 	white-space: nowrap;
 }
-.bar-distrib{
-	display: flex;
-	justify-content: space-between;
-}
-.bar {
-	width: 100%;
-	overflow: hidden;
-	opacity: 0.60;
+.n-button:hover{
+	color: #000!important;
+    background-color: #ccc!important;
 }
 #home {
     background-repeat: no-repeat;
@@ -263,9 +277,11 @@ footer a {
 	background-color: #757575;
 	font-family: cursive;
 	color: #fff!important;
-    padding-top: 64px!important;
-    padding-bottom: 64px!important;
     padding: 0.01em 16px;
+}
+.admin-center{
+	text-align: center!important;
+	font-size: 18px;
 }
 
 .user, input[type="checkbox"] {
@@ -300,6 +316,13 @@ form span{
 	padding-right: 10px;
 	text-decoration: none;
 }
+.a-row{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.a-col{
+	width: 48.9%;
+}
 
 /*Large devices (laptops/desktops/tablets, 686px and up)*/ 
 @media screen and (min-width: 686px) {
@@ -324,19 +347,28 @@ form span{
 		max-width: 980px;
     	margin: 0 auto;
 	}
-	
+	.bar:hover{
+		opacity: 1;
+	}
+	.bar-distrib{
+		display: flex;
+		justify-content: space-between;
+	}
 	.mobile{
 		font-size: 60px;
-		}
-	.a-row{
-			display: flex;
-			flex-wrap: nowrap;
-		}
-	.a-col{
-			width: 48.9%;
 		}
 	.m-content{
 		max-width: 980px;
 		margin: auto;
+	}
+		/*admin*/
+	.admin {
+		min-height: 90%;
+		background-color: #757575;
+		font-family: cursive;
+		color: #fff!important;
+		padding-top: 64px!important;
+		padding-bottom: 64px!important;
+		padding: 0.01em 16px;
 	}
 }

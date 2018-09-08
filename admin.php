@@ -52,7 +52,7 @@
                     
                 </div>
                 <?php endif ?>
-        <h1 class="m-center">Users reservation and submited messages</h1>                   
+        <h1 class="admin-center">Users reservation and submited messages</h1>                   
                         <!-- read feedback script-->
                         <?php include('includes/read_fedback.php') ?>
 
