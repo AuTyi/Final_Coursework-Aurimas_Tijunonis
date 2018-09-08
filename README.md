@@ -1,8 +1,8 @@
-Pizza restaurant.
+#Pizza restaurant.
 
-1.	Idea and purpose of the website. 
-2.	Applied technology review- frontend and backend.
-3.	Further updates. 
+-	Idea and purpose of the website. 
+-	Applied technology review- frontend and backend.
+-	Further updates. 
 
 Idea of website. 
 The page is for a pizza restaurant. First of all, show menu - meal dishes in a restaurant made and served. The restaurant itself is also briefly described. And there is a feedback form and a table reservation form. There is also an administrator page that is accessible only to authenticated users. In an administrator page logged user can see table reservation and user feedback information from contact section of the front page.
@@ -14,5 +14,5 @@ The menu consists of three sections, which are depicted as tabs, using JavaScryp
 Html and PHP separated as much as possible by distributing them to individual files.
 
 Further updates. 
-It is planned to realize online orders by adapting the Simple cart shopping cart. Also, orders are saved in the database and then displayed on the admin page.
+It is planned to realize online orders by adapting the [Simple cart](http://simplecartjs.org/) shopping cart. Also, orders are saved in the database and then displayed on the admin page.
 Realize the ability for the administrator to change the rendering of menus. To do this, use PHP, save information through a filled form to the database, and then display it in the main page of the menu section.
