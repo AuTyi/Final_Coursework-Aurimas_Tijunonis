@@ -1,4 +1,4 @@
-#Pizza restaurant.
+# Pizza restaurant.
 
 -	Idea and purpose of the website. 
 -	Applied technology review- frontend and backend.
