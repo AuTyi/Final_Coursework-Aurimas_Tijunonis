@@ -14,7 +14,7 @@ if($_POST){
 
     if(strlen($name)>0 && strlen($feedback)>0 && strlen($people) && strlen($date)) {
 
-         //no sql injection        
+         //test sql injection        
         $name = $conn->real_escape_string($name);
 		$people = $conn->real_escape_string($people);
 		$feedback = $conn->real_escape_string($feedback);

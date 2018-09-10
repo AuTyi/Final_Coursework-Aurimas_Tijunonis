@@ -7,10 +7,10 @@ session_start();
 <title>Pizzeria Vilnius Best of</title>
 	</head>
 <body>
-	<!-- navbar -->
+	<!-- Navigation bar -->
   <?php include('includes/navbar.php') ?>
 
-<!-- Header -->
+<!-- Header block -->
 <header id="home">
       <div class="h-mobile">
       <span class="mobile" ><b>thin<br>CRUST PIZZA</b></span>
@@ -102,7 +102,7 @@ session_start();
   </div>
 </div>
 <script>
-// Tabbed Menu
+// Tabbed Menu script
 function openMenu(evt, menuName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("menu");
@@ -118,7 +118,7 @@ function openMenu(evt, menuName) {
 }
 document.getElementById("myLink").click();
 </script>
-<!-- about-->
+<!-- About block-->
 <section class="background-dark" id="about">
   <div class="m-content">
     <h1 class="m-center">About</h1>
@@ -143,7 +143,7 @@ document.getElementById("myLink").click();
     
   </div>
 </section>
-<!-- google maps) -->
+<!--Google maps block -->
 <div class="mapouter">
 	<div class="gmap_canvas">
 		<iframe width="500" height="400" id="gmap_canvas" src="https://maps.google.com/maps?q=gedimino%20bok%C5%A1tas&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
@@ -151,7 +151,7 @@ document.getElementById("myLink").click();
 	</div>
 		
 </div>
-<!--form-->
+<!--Conatct and feedback form-->
 <div class="s-contact s-menu">
   <div class="m-content">
     <h1 class="m-center">Contact</h1>
@@ -164,5 +164,5 @@ document.getElementById("myLink").click();
   </div>
 </div>
 
-<!-- footer -->
+<!-- footer block -->
 <?php include('includes/footer.php') ?>

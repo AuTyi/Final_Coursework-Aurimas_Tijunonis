@@ -1,7 +1,6 @@
 <?php
 include('includes/config.php');//connect to database
 
-
 $id = isset($_GET['id']) ? $_GET['id'] : null;
 $year_month = isset($_GET['month']) ? $_GET['month'] : null;
 $page = isset($_GET['page']) ? $_GET['page'] : 1;
@@ -23,11 +22,7 @@ if(strlen($year_month) > 0){
 $all_entries = $conn->query("SELECT * FROM feedback ORDER BY date desc" . $selection); //select all ;
 $entries = $conn->query("SELECT * FROM feedback ORDER BY date desc" . $selection . 
 			" LIMIT ". ($page-1)*$entries_per_page . " , " . $entries_per_page); //select per page;
-
-
-
 ?>
-
 		<hr>
 		<?php
 			if($entries && $entries->num_rows > 0){
@@ -39,7 +34,7 @@ $entries = $conn->query("SELECT * FROM feedback ORDER BY date desc" . $selection
 					echo '<hr>';
 				}
 				$max_page = ceil($all_entries->num_rows/$entries_per_page);
-				for($n=1; $n <= $max_page; $n++){
+				for($n=1; $n <= $max_page; $n++){ //pagination
 					$active = ($page == $n) ? "classname='active'" : "";
 					echo '<a class="pagination" href="admin.php?page=' . $n . '" ' . $active . '>' . $n . '</a>';
 				}

@@ -273,7 +273,7 @@ footer a {
 }
 /*admin*/
 .admin {
-	min-height: 90%;
+	min-height:  93%;
 	background-color: #757575;
 	font-family: cursive;
 	color: #fff!important;
@@ -363,7 +363,7 @@ form span{
 	}
 		/*admin*/
 	.admin {
-		min-height: 90%;
+		min-height: 93%;
 		background-color: #757575;
 		font-family: cursive;
 		color: #fff!important;
