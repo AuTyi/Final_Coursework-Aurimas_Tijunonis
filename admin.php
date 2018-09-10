@@ -1,11 +1,5 @@
-<?php require_once('includes/head_section.php') ?>
-
-<title>Pizzeria Vilnius Best of</title>
-	</head>
-<body>
-	     
-    <?php 
-            include('includes/config.php');//connect to database
+<?php
+include('includes/config.php');//connect to database
   
             if (!isset($_SESSION['username'])) {
                 $_SESSION['msg'] = "You must log in first";
@@ -26,6 +20,13 @@
             }
             
             ?>
+            
+<?php require_once('includes/head_section.php') ?>
+
+<title>Pizzeria Vilnius Best of</title>
+	</head>
+<body>
+
 <!-- logged in user menu and information -->
                 <?php  if (isset($_SESSION['username'])) : ?>
                     <div class="navigation b-black">

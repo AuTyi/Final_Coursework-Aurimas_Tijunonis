@@ -1,3 +1,7 @@
+<?php
+@ob_start();
+session_start();
+?>
 <?php require_once('includes/head_section.php') ?>
 
 <title>Pizzeria Vilnius Best of</title>
@@ -119,7 +123,7 @@ document.getElementById("myLink").click();
   <div class="m-content">
     <h1 class="m-center">About</h1>
     <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <p><strong>The Chef?</strong> Mr. Italiano himself<img src="../../_WebProjectPizza/img/chef.jpg" class="a-chef" alt="Chef-Italiano"></p>
+    <p><strong>The Chef?</strong> Mr. Italiano himself<img src="../../img/chef.jpg" class="a-chef" alt="Chef-Italiano"></p>
     <p>We are proud of our interiors.</p>
     
     <h1><b>Opening Hours</b></h1>

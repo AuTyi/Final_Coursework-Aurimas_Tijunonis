@@ -10,6 +10,7 @@ The page is for a pizza restaurant. First of all, show menu - meal dishes in a r
 Technology used.
 The page is written in html, the design is described in a separate css file.
 The feedback form in contact section used PHP language for the transfer and recording of data to the MySql database. The PHP language is also used to capture and transfer information from DB to an administrative page. For login, the user registration of the administrator’s page is realized in the forms in which the information is transmitted to the database using the PHP script. When logging in, the user can specify "remember me" who writes into the database a token valid for 2 weeks, which is used to identify the user.  When the user logged on to the administrator page, displays information with user’s name, and welcome message.
+For a spam prevention, in a form using "honey pot", blank field, hidden from normal users. Then filed by bots, crypt stop submitting. In form also used string check for filed symbols. 
 The menu consists of three sections, which are depicted as tabs, using JavaScrypt.
 Html and PHP separated as much as possible by distributing them to individual files.
 
